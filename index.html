@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/assets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Jersey+25&family=Luckiest+Guy&family=Press+Start+2P&family=Wallpoet&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <aside id="aside">
+        <div class="menu">
+            <a href="#intro">
+                <h1 class="logo">Portfolio</h1>
+            </a>
+            <nav>
+                <ul class="items">
+                    <li><a class="menuLink" href="#work">Work</a></li>
+                    <li><a class="menuLink" href="#aboutMe">About Me</a></li>
+                    <li><a class="menuLink" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <script src="assets/scripts/script.js"></script>
+        </div>
+    </aside>
+    <section id="intro" class="intro mainBg">
+        <div id="resume" class="resume main">
+            <h2 class="myName">I'm Grandon!</h2>
+            <h3>QA Tester & full-stack developer</h3><br>
+            <p>Hello! 👋<br>My name is Bruno, but you can call me 'Grandon'. I'm 28 years old from Brazil. I'm a QA
+                tester and i study programming.</p>
+            <p>I also studied Game Design at Unicap where I fell in love with programming</p>
+        </div>
+        <div>
+            <img class="meImg" src="assets/Images/meImg.png" alt="It's a myself photo">
+        </div>
+        <div class="waContainer">
+            <a class="waLink" href="https://wa.me/5581999983163" target="_blank">
+            </a>
+            <div class="waBox text-border">Hire me!</div>
+        </div>
+    </section>
+    <section id="work" class="work secondBg">
+        <h1>My projets</h1>
+        <div class="projets">
+            <div class="hoverMeImg">
+                <img src="assets/Images/CorridaOlimpica.png"
+                    alt="Wallpapper of a game named 'corrida olímpica', with two characters running." width="580px"
+                    height="290px">
+                <h3 class="h3Project">Corrida Olímpica</h3>
+                <p>That's my firts game, made it in University. It's a infinite runner's game created in construct 2 for the olympics games.
+                    Using a little of JavaScript and Game Design concepts.</p>
+            </div>
+            <div class="hoverMeImg">
+                <a href="https://myfirstlandingpagebr.netlify.app/" target="_blank"><img
+                        src="assets/Images/LandingPageSite.png" alt="Image of my first landing page site" width="580px"
+                        height="290px"></a>
+                <h3 class="h3Project">LandingPage Site</h3>
+                <p>My first LandingPage website. Made with HTML, CSS and JavaScript. In a course of JavaScript i learned
+                    how to do LandingPage sites with a great visual for users.</p>
+            </div>
+        </div>
+    </section>
+    <section id="aboutMe" class="aboutMe mainBg">
+        <div class="padAbout">
+            <h1>About Me</h1>
+            <p>Hi! I'm Bruno, but you can call me Grandon. I'm 28 years old, based in Brazil. I am in love with
+                technology and continuous improvement. I work as a QA Tester with over 5 years of experience, ensuring
+                quality and functionality of software I also have knowledge in programming languanges such as HTML, CSS,
+                JavaScript, C#, VB.NET and SQL Server which allows me to collaborate with developers team and contribute
+                to
+                solucion development.</p><br>
+            <p>I'm constantly seeking for learning and growth, expanding my knowledge. I speak intermediate-level
+                English and N5 certification in Japanese. I really want to continue evolving as a professional and add
+                value to the projects and teams i work with.</p>
+        </div>
+        <div class="overflowClass">
+            <div class="main-container">
+                <div class="text-wrapper left">
+                    <div class="content">
+                        <h3>Enter University</h3>
+                        <p>Entered in Catholic University(Unicap)<br>Game Design Course</p>
+                        <span class="date">2016</span>
+                    </div>
+                </div>
+                <div class="text-wrapper right">
+                    <div class="content">
+                        <h3>First Game</h3>
+                        <p>My first game using construct</p>
+                        <span class="date">2016</span>
+                    </div>
+                </div>
+                <div class="text-wrapper left">
+                    <div class="content">
+                        <h3>Joined Consulticart</h3>
+                        <p>Work as Administrative assistance</p>
+                        <span class="date">2017</span>
+                    </div>
+                </div>
+                <div class="text-wrapper right">
+                    <div class="content">
+                        <h3>Changed the role in Consulticart</h3>
+                        <p>Work as QA Tester</p>
+                        <span class="date">2019</span>
+                    </div>
+                </div>
+                <div class="text-wrapper left">
+                    <div class="content">
+                        <h3>Exchange Japan</h3>
+                        <p>Studied Japanese</p>
+                        <span class="date">2020</span>
+                    </div>
+                </div>
+                <div class="text-wrapper right">
+                    <div class="content">
+                        <h3>What's next?</h3>
+                        <p>¯\_(ツ)_/¯</p>
+                        <span class="date"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="secMinum">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="9e4c1368-dc55-4943-ae1f-791f76eb15df">
+            <div class="contactClass">
+                <div class="sendMeClass">
+                    <h3 style="margin: 25px; color: #f54c4c;">Contact me</h3>
+                    <label for="name">Digite seu nome:</label>
+                    <input type="text" name="name" id="iName" required>
+                    <label for="mail">Digite seu Email:</label>
+                    <input type="email" name="mail" id="iMail" placeholder="ex.: email@gmail.com" required>
+                    <label for="text">Mensagem:</label>
+                    <textarea name="text" id="iText"></textarea required>
+                    <input type="submit" value="submit" class="sub">
+                </div>
+            <div class="bgFoot">
+                <div class="box">
+                    <a class="img-insta" href="https://www.instagram.com/brun0santoss/" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <a class="img-link" href="https://www.linkedin.com/in/bruno-santos4930/" target="_blank"></a>
+                </div>
+                <div class="box">
+                    <a class="img-git" href="https://github.com/grandonbr" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+    <footer class="footerClass">
+        <p>Made with love by: <a class="footerA" rel="nofollow" target="_blank"
+                href="https://www.linkedin.com/in/bruno-santos4930/">Bruno "Grandon" Costa</a></p>
+    </footer>
+</body>
+
+</html>
