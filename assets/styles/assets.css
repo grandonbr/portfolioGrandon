@@ -91,7 +91,7 @@ p {
     /* background-image: url(../Images/backgroudOne.png); */
     /* background: radial-gradient(circle, rgb(61, 59, 93) 0%, rgba(0, 47, 74, 1) 70%); */
     /* background: linear-gradient(to top, rgb(61, 59, 93) 0%, rgba(0, 47, 74, 1) 50%, rgb(61, 59, 93) 100%); */
-    background-image: url(/assets/Images/bgWallpapper.jpg);
+    background-image: url(../Images/bgWallpapper.jpg);
     background-position: center center;
     background-size: cover;
     color: aliceblue;
@@ -115,7 +115,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(/assets/Images/bgWallpapper.jpg);
+    background-image: url(../Images/bgWallpapper.jpg);
     background-position: center;
     background-size: cover;
     transform: rotate(180deg);
@@ -155,7 +155,7 @@ section {
 }
 
 .waLink{
-    background-image: url(/assets/Images/waLogo.png);
+    background-image: url(../Images/waLogo.png);
     background-position: center center;
     background-size: 100px;
     position: absolute;
