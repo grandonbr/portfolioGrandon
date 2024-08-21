@@ -100,7 +100,7 @@ p {
 
 .secondBg {
     /* background: linear-gradient(to top, #665a6e, #311838); */
-    
+
     color: aliceblue;
     position: relative;
     z-index: 1;
@@ -108,7 +108,7 @@ p {
     /* border: 4rem #000; */
 }
 
-.secondBg::before{
+.secondBg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -126,13 +126,14 @@ p {
 .menu {
     /* background: linear-gradient(to bottom,#2d0846, #311838); */
     /* background: radial-gradient(circle, rgba(61,59,93,1) 0%, rgba(0,47,74,1) 70%); */
-    background: linear-gradient(180deg, rgb(0, 0, 0) 60%, rgba(61, 59, 93, 0) 100%);
+    /* background: linear-gradient(180deg, rgb(0, 0, 0) 60%, rgba(61, 59, 93, 0) 100%); */
+    background: black;
     display: flex;
     justify-content: space-between;
     padding: 2rem 10rem;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 .items {
@@ -149,12 +150,13 @@ section {
     padding: 0 10rem;
 }
 
-.waContainer{
+.waContainer {
     display: inline-block;
     position: relative;
+    z-index: 2;
 }
 
-.waLink{
+.waLink {
     background-image: url(../Images/waLogo.png);
     background-position: center center;
     background-size: 100px;
@@ -162,16 +164,16 @@ section {
     width: 100px;
     height: 100px;
     transition: all 500ms ease-in-out;
-    z-index: 2;
+    z-index: 3;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.waLink:hover{
+.waLink:hover {
     transform: rotate(360deg);
 }
 
-.waBox{
+.waBox {
     background: rgb(84, 238, 84);
     width: 0px;
     height: 80px;
@@ -192,7 +194,7 @@ section {
     text-shadow: #000 -3px 3px 0;
 }
 
-.waContainer:hover .waBox{
+.waContainer:hover .waBox {
     opacity: 1;
     transform: translateX(10px) translateY(-50%);
     width: 180px;
@@ -209,7 +211,7 @@ section {
 
 .intro {
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
 }
@@ -218,6 +220,8 @@ section {
     border-radius: 50%;
     opacity: 90%;
     box-shadow: 0px 0px 20px 12px #290c0cb4;
+    max-width: 480px;
+    max-height: 480px;
 }
 
 .work {
@@ -230,24 +234,24 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
-.h3Project{
+.h3Project {
     text-decoration: underline;
 }
 
-.hoverMeImg{
+.hoverMeImg {
     display: inline-block;
     overflow: hidden;
     margin: 0 5px;
 }
 
-.hoverMeImg img{
+.hoverMeImg img {
     transition: transform 0.3s ease-in-out;
     display: block;
     transform-origin: center;
     margin-bottom: 10px;
 }
 
-.hoverMeImg img:hover{
+.hoverMeImg img:hover {
     transform: rotate(2deg) scale(1.1);
 }
 
@@ -256,7 +260,9 @@ section {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+    align-items: center;
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .padAbout {
@@ -264,21 +270,21 @@ section {
 }
 
 .overflowClass {
-    height: 800px;
+    height: 700px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.overflowClass::-webkit-scrollbar{
+.overflowClass::-webkit-scrollbar {
     width: 6px;
 }
 
-.overflowClass::-webkit-scrollbar-track{
+.overflowClass::-webkit-scrollbar-track {
     background: #5c1d1d;
     border-radius: 15px;
 }
 
-.overflowClass::-webkit-scrollbar-thumb{
+.overflowClass::-webkit-scrollbar-thumb {
     background-color: #ffa7a7;
     border-radius: 15px;
 }
@@ -403,9 +409,9 @@ section.secMinum {
 
 .contactClass {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 15%;
+    padding: 10% 5% 2% 15%;
 }
 
 .sendMeClass {
@@ -414,7 +420,7 @@ section.secMinum {
     align-items: center;
 }
 
-.sendMeClass input, 
+.sendMeClass input,
 .sendMeClass textarea {
     width: 550px;
     height: 40px;
@@ -423,12 +429,12 @@ section.secMinum {
     font-size: 12pt;
 }
 
-.sendMeClass label{
+.sendMeClass label {
     margin: 5px;
     width: 550px;
 }
 
-.sendMeClass textarea{
+.sendMeClass textarea {
     height: 180px;
 }
 
@@ -584,7 +590,7 @@ section.secMinum {
 .img-git:hover {
     background-image: url(../Images/githubLogo2.png);
     border-radius: 0%;
-    background-size: 230px 75px;
+    background-size: 220px 75px;
     width: 250px;
     height: 75px;
     transition: all 200ms ease-out;
@@ -615,7 +621,7 @@ body::-webkit-scrollbar {
     /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar:hover{
+body::-webkit-scrollbar:hover {
     width: 12px;
 }
 
@@ -639,4 +645,209 @@ body::-webkit-scrollbar-thumb {
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+@media (max-width:1300px) {
+    .bgFoot {
+        display: grid;
+        align-content: space-evenly;
+        z-index: 0;
+        justify-items: center;
+        margin-left: 0;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+
+    .aboutMe {
+        display: block;
+    }
+
+    .overflowClass {
+        height: 220px;
+        max-width: 1000px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .overflowClass::-webkit-scrollbar{
+        height: 8px;
+    }
+
+    .overflowClass:hover::-webkit-scrollbar{
+        height: 12px;
+    }
+
+    .main-container {
+        position: relative;
+        width: 25px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-container::after {
+        height: 10px;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -3px;
+    }
+
+    .text-wrapper {
+        width: 350px;
+        margin: 0 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .text-wrapper::after {
+        width: 25px;
+        bottom: -10px;
+        left: 45%;
+        top: 105%;
+    }
+
+    .left{
+        text-align: left;
+    }
+
+    .left::after{
+        z-index: -1;
+    }
+
+    .right{
+        text-align: left;
+    }
+
+    .right::after{
+        top: 160px;
+        z-index: -1;
+    }
+
+    .content{
+        width: 200px;
+        max-height: 300px;
+        display: table;
+    }
+
+    .date{
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    .projets{
+        grid-template-columns: 1fr;
+        text-align: -webkit-center;
+    }
+
+    .meImg{
+        max-width: 350px;
+        max-height: 350px;
+        margin: 15px;
+    }
+
+    .contactClass{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:900px) {
+    .intro{
+        grid-template-columns: 1fr;
+    }
+
+    .meImg{
+        margin: 15px;
+    }
+
+    .contactClass{
+        padding: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .sendMeClass label, .sendMeClass input, .sendMeClass textarea{
+        width: 300px;
+    }
+
+    .sendMeClass .sub{
+        width: 300px;
+    }
+
+    .sendMeClass{
+        max-width: 350px;
+    }
+
+    .contactClass{
+        justify-items: center;
+    }
+
+    .box{
+        margin: 0 20px;
+
+    }
+
+    .box:hover{
+        
+    }
+
+    .hoverMeImg img{
+        width: 350px;
+        height: 190px;
+    }
+
+    .projets{
+        margin: auto;
+    }
+
+    section{
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width:425px) {
+    footer>p{
+        font-size: 25px;
+    }
+
+    section.secMinum{
+        padding: 0 10px;
+    }
+
+    .sendMeClass{
+        width: 320px;
+    }
+
+    .sendMeClass label, .sendMeClass input, .sendMeClass textarea{
+        width: 220px;
+    }
+
+    .sendMeClass label{
+        font-size: 25px;
+    }
+
+    .sendMeClass .sub{
+        width: 220px;
+    }
+
+    .meImg{
+        max-width: 300px;
+        max-height: 300px;
+        margin: 15px;
+    }
+
+    .hoverMeImg img{
+        width: 325px;
+        height: 175px;
+    }
+    
 }
