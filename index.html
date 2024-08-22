@@ -11,16 +11,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Jersey+25&family=Luckiest+Guy&family=Press+Start+2P&family=Wallpoet&display=swap"
         rel="stylesheet">
-        <!-- ana langdon -->
+    <!-- ana langdon -->
 </head>
 
 <body>
+    <input id="closeMenu" class="closeMenu" type="checkbox" aria-label="Close menu" role="button" aria-pressed="true">
+    <label class="closMenuLabel" for="closeMenu" title="close menu"></label>
     <aside id="aside">
         <div class="menu">
             <a href="#intro">
                 <h1 class="logo">Portfolio</h1>
             </a>
-            <nav>
+            <nav class="navDisplay">
                 <ul class="items">
                     <li><a class="menuLink" href="#work">Work</a></li>
                     <li><a class="menuLink" href="#aboutMe">About Me</a></li>
@@ -32,7 +34,7 @@
     </aside>
     <div style="height: 105px; display: block;"></div>
     <section id="intro" class="intro mainBg">
-        
+
         <div>
             <img class="meImg" src="assets/Images/meImg.png" alt="It's a photo of myself">
         </div>
@@ -48,23 +50,24 @@
                 <div class="waBox text-border">Hire me!</div>
             </div>
         </div>
-        
+
     </section>
     <section id="work" class="work secondBg">
         <h1>My projets</h1>
         <div class="projets">
             <div class="hoverMeImg">
                 <img src="assets/Images/CorridaOlimpica.png"
-                    alt="Wallpapper of a game named 'corrida olímpica', with two characters running." width="580px"
-                    height="290px">
+                    alt="Wallpapper of a game named 'corrida olímpica', with two characters running." width="580"
+                    height="290">
                 <h3 class="h3Project">Corrida Olímpica</h3>
-                <p>That's my firts game, made it in University. It's a infinite runner's game created in construct 2 for the olympics games.
+                <p>That's my firts game, made it in University. It's a infinite runner's game created in construct 2 for
+                    the olympics games.
                     Using a little of JavaScript and Game Design concepts.</p>
             </div>
             <div class="hoverMeImg">
                 <a href="https://myfirstlandingpagebr.netlify.app/" target="_blank"><img
-                        src="assets/Images/LandingPageSite.png" alt="Image of my first landing page site" width="580px"
-                        height="290px"></a>
+                        src="assets/Images/LandingPageSite.png" alt="Image of my first landing page site" width="580"
+                        height="290"></a>
                 <h3 class="h3Project">LandingPage Site</h3>
                 <p>My first LandingPage website. Made with HTML, CSS and JavaScript. In a course of JavaScript i learned
                     how to do LandingPage sites with a great visual for users.</p>
@@ -137,26 +140,26 @@
             <div class="contactClass">
                 <div class="sendMeClass">
                     <h3 style="margin: 25px; color: #f54c4c;">Contact me</h3>
-                    <label for="name">Your name:</label>
+                    <label for="iName">Your name:</label>
                     <input type="text" name="name" id="iName" required>
-                    <label for="mail">Your Email:</label>
+                    <label for="iMail">Your Email:</label>
                     <input type="email" name="mail" id="iMail" placeholder="ex.: email@gmail.com" required>
-                    <label for="text">Message:</label>
-                    <textarea name="text" id="iText"></textarea required>
+                    <label for="iText">Message:</label>
+                    <textarea name="text" id="iText" required></textarea>
                     <input type="submit" value="submit" class="sub">
                 </div>
-            <div class="bgFoot">
-                <div class="box">
-                    <a class="img-insta" href="https://www.instagram.com/brun0santoss/" target="_blank"></a>
-                </div>
-                <div class="box">
-                    <a class="img-link" href="https://www.linkedin.com/in/bruno-santos4930/" target="_blank"></a>
-                </div>
-                <div class="box">
-                    <a class="img-git" href="https://github.com/grandonbr" target="_blank"></a>
+                <div class="bgFoot">
+                    <div class="box">
+                        <a class="img-insta" href="https://www.instagram.com/brun0santoss/" target="_blank"></a>
+                    </div>
+                    <div class="box">
+                        <a class="img-link" href="https://www.linkedin.com/in/bruno-santos4930/" target="_blank"></a>
+                    </div>
+                    <div class="box">
+                        <a class="img-git" href="https://github.com/grandonbr" target="_blank"></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </form>
     </section>
     <footer class="footerClass">

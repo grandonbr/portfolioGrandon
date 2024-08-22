@@ -637,6 +637,10 @@ body::-webkit-scrollbar-thumb {
     /* roundness of the scroll thumb */
 }
 
+.closeMenu{
+    display: none;
+}
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -774,6 +778,58 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:768px) {
+    .closeMenu{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+    }
+
+    .closMenuLabel::after{
+        content: '☰';
+        position: fixed;
+        z-index: 1000;
+        top: 2rem;
+        right: 2rem;
+        background: #000;
+        color: #f8f8ff;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .navDisplay{
+        display: none;
+    }
+
+    .closeMenu:checked~aside>.menu{
+        display: block;
+    }
+
+    .closeMenu:checked~aside>div>.navDisplay{
+        display: block;
+    }
+
+    .closeMenu:checked~.closMenuLabel::after{
+        content: 'x';
+    }
+
+    .menu{
+        padding: 20px;
+    }
+
+    .items{
+        justify-content: center;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
     .sendMeClass label, .sendMeClass input, .sendMeClass textarea{
         width: 300px;
     }
@@ -793,10 +849,6 @@ body::-webkit-scrollbar-thumb {
     .box{
         margin: 0 20px;
 
-    }
-
-    .box:hover{
-        
     }
 
     .hoverMeImg img{
