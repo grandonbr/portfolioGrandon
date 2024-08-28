@@ -150,7 +150,7 @@ section {
     padding: 0 10rem;
 }
 
-.waContainer {
+/* .waContainer {
     display: inline-block;
     position: relative;
     z-index: 2;
@@ -192,6 +192,50 @@ section {
     font-weight: 900;
     box-shadow: rgb(84, 238, 84) 2px -2px 10px 1px, rgb(84, 238, 84) -2px 2px 10px 1px;
     text-shadow: #000 -3px 3px 0;
+} */
+
+.cIcon>a{
+    margin-right: 20px;
+    font-size: 45pt;
+}
+
+.cIcon>a>abbr>i{
+    transition: transform 300ms ease-in-out;
+}
+
+.cIcon>a:visited{
+    color: #ff3f3f;
+}
+
+.cIcon>a:link{
+    color: #ff3f3f;
+}
+
+.cIcon>a>abbr>i:hover{
+    /* transform: scale(1.5); */
+    animation: dance 1000ms linear infinite;
+}
+
+@keyframes dance{
+    0%{
+        transform: rotate(0) scale(1.3);
+    }
+
+    25%{
+        transform: rotate(10deg) scale(1.3);
+    }
+
+    50%{
+        transform: rotate(0) scale(1.3);
+    }
+
+    75%{
+        transform: rotate(-10deg) scale(1.3);
+    }
+
+    100%{
+        transform: rotate(0) scale(1.3);
+    }
 }
 
 .waContainer:hover .waBox {
@@ -414,6 +458,7 @@ section.secMinum {
     padding: 10% 5% 2% 15%;
 }
 
+/* 
 .sendMeClass {
     display: flex;
     flex-direction: column;
@@ -436,6 +481,12 @@ section.secMinum {
 
 .sendMeClass textarea {
     height: 180px;
+} */
+
+.sendMeClass{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .sendMeClass .sub {
@@ -457,6 +508,57 @@ section.secMinum {
 
 .sendMeClass {
     border: #fff solid 2px;
+}
+
+.inputField {
+    position: relative;
+}
+
+.inputField input,
+.inputField textarea {
+    width: 550px;
+    height: 60px;
+    margin: 15px 25px;
+    border-radius: 8px;
+    font-size: 18pt;
+    color: #fff;
+    padding: 0 15px;
+    border: 2px solid #f8f8ff;
+    background: transparent;
+    outline: none;
+}
+
+.inputField textarea{
+    max-width: 550px;
+    min-width: 550px;
+    min-height: 100px;
+    height: 150px;
+}
+
+.inputField label {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: 300ms;
+    font-size: 18pt;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+    border: 2px solid #ff3f3f;
+}
+
+.inputField>input:focus~label,
+.inputField>input:valid~label,
+.inputField>textarea:valid~label,
+.inputField>textarea:focus~label {
+    top: 12px;
+    font-size: 16pt;
+    padding: 0 10px;
+    background: #000;
 }
 
 .bgFoot {
@@ -637,7 +739,7 @@ body::-webkit-scrollbar-thumb {
     /* roundness of the scroll thumb */
 }
 
-.closeMenu{
+.closeMenu {
     display: none;
 }
 
@@ -678,11 +780,11 @@ body::-webkit-scrollbar-thumb {
         overflow-y: hidden;
     }
 
-    .overflowClass::-webkit-scrollbar{
+    .overflowClass::-webkit-scrollbar {
         height: 8px;
     }
 
-    .overflowClass:hover::-webkit-scrollbar{
+    .overflowClass:hover::-webkit-scrollbar {
         height: 12px;
     }
 
@@ -716,76 +818,76 @@ body::-webkit-scrollbar-thumb {
         top: 105%;
     }
 
-    .left{
+    .left {
         text-align: left;
     }
 
-    .left::after{
+    .left::after {
         z-index: -1;
     }
 
-    .right{
+    .right {
         text-align: left;
     }
 
-    .right::after{
+    .right::after {
         top: 160px;
         z-index: -1;
     }
 
-    .content{
+    .content {
         width: 200px;
         max-height: 300px;
         display: table;
     }
 
-    .date{
+    .date {
         padding-left: 0;
         width: 100%;
         display: flex;
         justify-content: right;
     }
 
-    .projets{
+    .projets {
         grid-template-columns: 1fr;
         text-align: -webkit-center;
     }
 
-    .meImg{
+    .meImg {
         max-width: 350px;
         max-height: 350px;
         margin: 15px;
     }
 
-    .contactClass{
+    .contactClass {
         grid-template-columns: 1fr;
     }
 
 }
 
 @media (max-width:900px) {
-    .intro{
+    .intro {
         grid-template-columns: 1fr;
     }
 
-    .meImg{
+    .meImg {
         margin: 15px;
     }
 
-    .contactClass{
+    .contactClass {
         padding: 10px;
     }
 }
 
 @media (max-width:768px) {
-    .closeMenu{
+    .closeMenu {
         position: fixed;
         z-index: 1000;
         top: 0;
         left: 0;
     }
 
-    .closMenuLabel::after{
+    .closMenuLabel::after {
         content: '☰';
         position: fixed;
         z-index: 1000;
@@ -802,104 +904,121 @@ body::-webkit-scrollbar-thumb {
         cursor: pointer;
     }
 
-    .navDisplay{
+    .navDisplay {
         display: none;
     }
 
-    .closeMenu:checked~aside>.menu{
+    .closeMenu:checked~aside>.menu {
         display: block;
     }
 
-    .closeMenu:checked~aside>div>.navDisplay{
+    .closeMenu:checked~aside>div>.navDisplay {
         display: block;
     }
 
-    .closeMenu:checked~.closMenuLabel::after{
+    .closeMenu:checked~.closMenuLabel::after {
         content: 'x';
     }
 
-    .menu{
+    .menu {
         padding: 20px;
     }
 
-    .items{
+    .items {
         justify-content: center;
     }
 
-    .logo{
+    .logo {
         text-align: center;
     }
 
-    .sendMeClass label, .sendMeClass input, .sendMeClass textarea{
+    .sendMeClass input,
+    .sendMeClass textarea {
         width: 300px;
     }
 
-    .sendMeClass .sub{
+    .sendMeClass .sub {
         width: 300px;
     }
 
-    .sendMeClass{
+    .sendMeClass {
         max-width: 350px;
     }
 
-    .contactClass{
+    .inputField textarea{
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 100px;
+        height: 150px;
+    }
+    
+
+    .contactClass {
         justify-items: center;
     }
 
-    .box{
+    .box {
         margin: 0 20px;
 
     }
 
-    .hoverMeImg img{
+    .hoverMeImg img {
         width: 350px;
         height: 190px;
     }
 
-    .projets{
+    .projets {
         margin: auto;
     }
 
-    section{
+    section {
         padding: 0 20px;
     }
 
 }
 
 @media (max-width:425px) {
-    footer>p{
+    footer>p {
         font-size: 25px;
     }
 
-    section.secMinum{
+    section.secMinum {
         padding: 0 10px;
     }
 
-    .sendMeClass{
+    .sendMeClass {
         width: 320px;
     }
 
-    .sendMeClass label, .sendMeClass input, .sendMeClass textarea{
+    .sendMeClass input,
+    .sendMeClass textarea {
         width: 220px;
     }
 
-    .sendMeClass label{
+    .inputField textarea{
+        max-width: 220px;
+        min-width: 220px;
+        min-height: 100px;
+        height: 150px;
+    }
+
+    .sendMeClass label {
         font-size: 25px;
     }
 
-    .sendMeClass .sub{
+    .sendMeClass .sub {
         width: 220px;
     }
 
-    .meImg{
+    .meImg {
         max-width: 300px;
         max-height: 300px;
         margin: 15px;
     }
 
-    .hoverMeImg img{
+    .hoverMeImg img {
         width: 325px;
         height: 175px;
     }
-    
+
 }

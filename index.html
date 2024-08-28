@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Jersey+25&family=Luckiest+Guy&family=Press+Start+2P&family=Wallpoet&display=swap"
         rel="stylesheet">
-    <!-- ana langdon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/804d1d9284.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -44,11 +45,16 @@
             <p>Hello! 👋<br>My name is Bruno, but you can call me 'Grandon'. I'm 28 years old from Brazil. I'm a QA
                 tester and i study programming.</p>
             <p>I also studied Game Design at Unicap where I fell in love with programming.</p><br>
-            <div class="waContainer">
-                <a class="waLink" href="https://wa.me/5581999983163" target="_blank">
+            <div class="cIcon">
+                <a href="https://www.linkedin.com/in/bruno-santos4930/" target="_blank"><abbr title="Linkedin"><i class="fa fa-linkedin-square"></i></abbr></a>
+                <a href=https://www.instagram.com/brun0santoss/" target="_blank"><abbr title="Instagram"><i class="fa fa-instagram"></i></abbr></a>
+                <a href="https://github.com/grandonbr" target="_blank"><abbr title="Github"><i class="fa fa-github"></i></abbr></a>
+            </div>
+            <!-- <div class="waContainer">
+                <a class="waLink" href="https://wa.me/55819XXXXXXXX" target="_blank">
                 </a>
                 <div class="waBox text-border">Hire me!</div>
-            </div>
+            </div> -->
         </div>
 
     </section>
@@ -140,12 +146,18 @@
             <div class="contactClass">
                 <div class="sendMeClass">
                     <h3 style="margin: 25px; color: #f54c4c;">Contact me</h3>
-                    <label for="iName">Your name:</label>
-                    <input type="text" name="name" id="iName" required>
-                    <label for="iMail">Your Email:</label>
-                    <input type="email" name="mail" id="iMail" placeholder="ex.: email@gmail.com" required>
-                    <label for="iText">Message:</label>
-                    <textarea name="text" id="iText" required></textarea>
+                    <div class="inputField">
+                        <input type="text" name="name" id="iName" required>
+                        <label for="iName">Your name:</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="email" name="mail" id="iMail" required>
+                        <label for="iMail">Your Email:</label>
+                    </div>
+                    <div class="inputField">
+                        <textarea name="text" id="iText" required></textarea>
+                        <label for="iText">Message:</label>
+                    </div>
                     <input type="submit" value="submit" class="sub">
                 </div>
                 <div class="bgFoot">
