@@ -150,6 +150,139 @@ section {
     padding: 0 10rem;
 }
 
+.myName{
+    color: #f8f8ff;
+    text-transform: capitalize;
+}
+
+.myName span{
+    color: #ff3f3f;
+    text-transform: uppercase;
+}
+
+.TypingText span{
+    position: relative;
+}
+/*QA Tester & full-stack developer*/
+.TypingText span:before{
+    content: "QA Tester";
+    color: #ff3f3f;
+    animation: words 15s infinite;
+}
+
+.TypingText span::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid transparent;
+    right: -8;
+    animation: cursor 600ms infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 3px solid #ff3f3f;
+    }
+}
+
+@keyframes words {
+    0%, 1%{
+        content: "Q";
+    }
+    1%, 2%{
+        content: "QA";
+    }
+    2%, 3%{
+        content: "QA T";
+    }
+    3%, 4%{
+        content: "QA Te";
+    }
+    4%, 5%{
+        content: "QA Tes";
+    }
+    5%, 6%{
+        content: "QA Test";
+    }
+    6%, 7%{
+        content: "QA Teste";
+    }
+    7%, 8%{
+        content: "QA Tester";
+    }
+    8%, 33%{
+        content: "QA Tester";
+    }
+    34%, 35%{
+        content: "W";
+    }
+    35%, 36%{
+        content: "We";
+    }
+    36%, 37%{
+        content: "Web";
+    }
+    37%, 38%{
+        content: "Web D";
+    }
+    38%, 39%{
+        content: "Web De";
+    }
+    39%, 40%{
+        content: "Web Dev";
+    }
+    40%, 41%{
+        content: "Web Deve";
+    }
+    41%, 42%{
+        content: "Web Devel";
+    }
+    42%, 43%{
+        content: "Web Develo";
+    }
+    43%, 44%{
+        content: "Web Develop";
+    }
+    44%, 45%{
+        content: "Web Develope";
+    }
+    45%, 66%{
+        content: "Web Developer";
+    }
+    67%, 68%{
+        content: "G";
+    }
+    68%, 69%{
+        content: "Ga";
+    }
+    69%, 70%{
+        content: "Gam";
+    }
+    70%, 71%{
+        content: "Game";
+    }
+    71%, 72%{
+        content: "Game D";
+    }
+    72%, 73%{
+        content: "Game De";
+    }
+    73%, 74%{
+        content: "Game Des";
+    }
+    74%, 75%{
+        content: "Game Desi";
+    }
+    75%, 76%{
+        content: "Game Desig";
+    }
+    76%, 100%{
+        content: "Game Design";
+    }
+}
+
 /* .waContainer {
     display: inline-block;
     position: relative;
@@ -238,13 +371,13 @@ section {
     }
 }
 
-.waContainer:hover .waBox {
+/* .waContainer:hover .waBox {
     opacity: 1;
     transform: translateX(10px) translateY(-50%);
     width: 180px;
     padding: 10px 20px;
-    /* height: 80px; */
-}
+    /* height: 80px; 
+} */
 
 .resume {
     display: flex;
@@ -260,10 +393,42 @@ section {
     align-content: center;
 }
 
+.hireContent{
+    background: #ff3f3f;
+    border-radius: 8px;
+    border: 2px solid #5c1d1d;
+    width: fit-content;
+    padding: 8px;
+    margin-top: 25px;
+    transition: all 200ms ease-in-out;
+}
+
+.hireContent a{
+    width: fit-content;
+    height: fit-content;
+}
+
+.hireContent>a:link,
+.hireContent>a:visited{
+    color: #fff;
+}
+
+.hireContent:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #5c1d1d;
+}
+
+.divMeImg{
+    box-shadow: 0 0 10px 100px #5c1d1d inset;
+    border-radius: 50%;
+    z-index: 5;
+}
+
 .meImg {
     border-radius: 50%;
-    opacity: 90%;
+    opacity: 80%;
     box-shadow: 0px 0px 20px 12px #290c0cb4;
+    /* box-shadow: 0 0 20px 12px #5c1d1d inset; */
     max-width: 480px;
     max-height: 480px;
 }
