@@ -194,46 +194,46 @@ section {
     text-shadow: #000 -3px 3px 0;
 } */
 
-.cIcon>a{
+.cIcon>a {
     margin-right: 20px;
     font-size: 45pt;
 }
 
-.cIcon>a>abbr>i{
+.cIcon>a>abbr>i {
     transition: transform 300ms ease-in-out;
 }
 
-.cIcon>a:visited{
+.cIcon>a:visited {
     color: #ff3f3f;
 }
 
-.cIcon>a:link{
+.cIcon>a:link {
     color: #ff3f3f;
 }
 
-.cIcon>a>abbr>i:hover{
+.cIcon>a>abbr>i:hover {
     /* transform: scale(1.5); */
     animation: dance 1000ms linear infinite;
 }
 
 @keyframes dance{
-    0%{
+    0% {
         transform: rotate(0) scale(1.3);
     }
 
-    25%{
+    25% {
         transform: rotate(10deg) scale(1.3);
     }
 
-    50%{
+    50% {
         transform: rotate(0) scale(1.3);
     }
 
-    75%{
+    75% {
         transform: rotate(-10deg) scale(1.3);
     }
 
-    100%{
+    100% {
         transform: rotate(0) scale(1.3);
     }
 }
@@ -483,7 +483,7 @@ section.secMinum {
     height: 180px;
 } */
 
-.sendMeClass{
+.sendMeClass {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -528,7 +528,7 @@ section.secMinum {
     outline: none;
 }
 
-.inputField textarea{
+.inputField textarea {
     max-width: 550px;
     min-width: 550px;
     min-height: 100px;
@@ -945,13 +945,13 @@ body::-webkit-scrollbar-thumb {
         max-width: 350px;
     }
 
-    .inputField textarea{
+    .inputField textarea {
         max-width: 300px;
         min-width: 300px;
         min-height: 100px;
         height: 150px;
     }
-    
+
 
     .contactClass {
         justify-items: center;
@@ -995,7 +995,7 @@ body::-webkit-scrollbar-thumb {
         width: 220px;
     }
 
-    .inputField textarea{
+    .inputField textarea {
         max-width: 220px;
         min-width: 220px;
         min-height: 100px;
