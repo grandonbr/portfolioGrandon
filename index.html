@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RH1G2J0JV0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RH1G2J0JV0');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -23,7 +32,7 @@
     <input id="closeMenu" class="closeMenu" type="checkbox" aria-label="Close menu" role="button" aria-pressed="true">
     <label class="closMenuLabel" for="closeMenu" title="close menu"></label>
     <aside id="aside">
-        <div class="menu">
+        <div id="menu" class="menu">
             <a href="#intro">
                 <h1 class="logo" onclick="getElementById('closeMenu').checked = false">Grandon</h1>
             </a>
@@ -37,7 +46,7 @@
             <script src="assets/scripts/script.js"></script>
         </div>
     </aside>
-    <div style="height: 105px; display: block;"></div>
+    <div style="height: 105px; display: block; background-color: black;"></div>
     <section id="intro" class="intro mainBg">
         <div>
             <img class="meImg" src="assets/Images/meImg.png" alt="It's a photo of myself">

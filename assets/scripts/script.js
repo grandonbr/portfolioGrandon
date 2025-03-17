@@ -10,3 +10,21 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
+// if (window.matchMedia("(max-width: 768px)").matches) {
+//     var prevScrollpos = window.pageYOffset;
+//     window.onscroll = function() {
+//       var currentScrollPos = window.pageYOffset;
+//       var menuSlide = document.getElementsByClassName("menu");
+  
+//       if (menuSlide.length > 0) {
+//         if (prevScrollpos > currentScrollPos) {
+//           menuSlide[0].style.top = "0";
+//         } else {
+//           menuSlide[0].style.top = "-138px";
+//         }
+//       }
+  
+//       prevScrollpos = currentScrollPos;
+//     }
+//   }

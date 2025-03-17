@@ -106,9 +106,11 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 2rem 10rem;
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 10;
+    transition: all 300ms ease-in-out;
 }
 
 .items {
@@ -725,8 +727,10 @@ section.secMinum {
 .toTop{
     position: fixed;
     right: 20px;
-    bottom: 30px;
+    bottom: 70px;
     z-index: 50;
+    background-color: #0000008f;
+    border-radius: 50%;
 }
 
 .toTop>a{
@@ -734,6 +738,7 @@ section.secMinum {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 100ms;
 }
 
 .toTop>a:hover{
@@ -746,6 +751,8 @@ section.secMinum {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5px;
+    font-size: 20pt;
 }
 
 .footerA:hover {
@@ -839,11 +846,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .main-container::after {
-        height: 10px;
-        left: 0;
-        right: 0;
-        top: 50%;
-        margin-top: -3px;
+        position: relative;
     }
 
     .text-wrapper {
@@ -871,6 +874,7 @@ body::-webkit-scrollbar-thumb {
     .right {
         text-align: left;
     }
+
 
     .right::after {
         top: 160px;
@@ -1013,6 +1017,10 @@ body::-webkit-scrollbar-thumb {
         margin: auto;
     }
 
+    .footerClass p{
+        font-size: 18pt;
+    }
+
     section {
         padding: 0 20px;
     }
@@ -1062,5 +1070,5 @@ body::-webkit-scrollbar-thumb {
         width: 325px;
         height: 175px;
     }
-
+    
 }
